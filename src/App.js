@@ -5,6 +5,7 @@ import Home from "./page/home/Home";
 import Create from "./page/create/Create";
 import Recipe from "./page/recipe/Recipe";
 import Search from "./page/search/Search";
+import Navbar from "./components/Navbar";
 
 //styles
 import "./App.css";
@@ -13,6 +14,8 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Navbar />
+
         <Switch>
           <Route exact path="/">
             <Home />
