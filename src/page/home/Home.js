@@ -5,6 +5,7 @@ import RecipeList from "../../components/RecipeList";
 
 //styles
 import "./Home.css";
+
 export default function Home() {
   const { data, isPending, error } = useFetch("http://localhost:3000/recipes");
 
