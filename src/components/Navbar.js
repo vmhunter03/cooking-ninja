@@ -1,6 +1,6 @@
 //hooks
 import { Link } from "react-router-dom";
-import { useTheme } from "../hooks/useThome";
+import { useTheme } from "../hooks/useTheme";
 //styles
 import "./Navbar.css";
 
