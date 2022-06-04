@@ -14,7 +14,7 @@ const themeReducer = (state, action) => {
 // Where color Data will store
 export function ThemeProvider({ children }) {
   const [state, dispatch] = useReducer(themeReducer, {
-    color: "blue",
+    color: "#58249c",
   });
 //where the color of onClick Data will store 
   const changeColor = (color) => {
