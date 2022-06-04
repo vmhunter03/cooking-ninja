@@ -5,7 +5,11 @@ import './RecipeList.css'
 
 
 export default function RecipeList({recipes}) {
-  return (
+  
+    if (recipes.length === 0) {
+        return <div className="error">No recipes to load...</div>
+    }
+    return (
       <div className="recipe-list">
           {recipes.map(recipe => (
               <div key={recipe.id} className="card">
